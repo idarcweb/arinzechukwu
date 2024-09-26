@@ -1,4 +1,4 @@
-import { Copyright } from "lucide-react";
+import { CgCopyright } from "react-icons/cg";
 
 type Props = {
   title: string;
@@ -26,7 +26,7 @@ const Page: React.FC<Props> = ({ title, text, children, px }) => {
       </section>
       {children}
       <h1 className="font-Fredoka flex justify-end w-full relative lg:absolute bottom-0 lg:bottom-4 lg:pr-12  text-liteport/20 items-center text-sm">
-        <Copyright size={12} />
+        <CgCopyright size={12} />
         {new Date().getUTCFullYear().toString()} arinzewebdev
       </h1>
     </main>
